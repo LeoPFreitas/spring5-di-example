@@ -1,7 +1,9 @@
 package com.lfreitas.spring5diexample.controllers;
 
 import com.lfreitas.spring5diexample.services.GreetingService;
+import org.springframework.stereotype.Controller;
 
+@Controller
 public class ConstructorInjectedController {
     private final GreetingService greetingService;
 
