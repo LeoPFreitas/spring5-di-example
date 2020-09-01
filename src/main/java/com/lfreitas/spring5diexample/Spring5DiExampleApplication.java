@@ -16,9 +16,8 @@ public class Spring5DiExampleApplication {
 
         MyController myController = (MyController) ctx.getBean("myController");
 
-        String greeting = myController.sayHello();
-
-        System.out.println(greeting);
+        System.out.println("--- Primary Been ---");
+        System.out.println(myController.sayHello());
 
         System.out.println("--- Property ---");
         PropertyInjectedController propertyInjectedController = (PropertyInjectedController) ctx.getBean(
