@@ -25,7 +25,7 @@ public class Spring5DiExampleApplication {
                 "propertyInjectedController");
         System.out.println(propertyInjectedController.getGreeting());
 
-        System.out.println("--- Set ---");
+        System.out.println("--- Setter ---");
         SetterInjectionController setterInjectionController = (SetterInjectionController) ctx.getBean(
                 "setterInjectionController");
         System.out.println(setterInjectionController.getGreeting());
